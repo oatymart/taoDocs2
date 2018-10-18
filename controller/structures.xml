@@ -3,9 +3,29 @@
 <structures>
 	<structure id="taoDocs2_main" name="taoDocs2" level="15" group="main">
 		<description />
-		<sections>
+        <icon id="icon-folder"/>
+        <sections>
 			<section id="taoDocs2_main" name="taoDocs2" url="/taoDocs2/TaoDocs2/index" />
 			<section id="taoDocs2_other" name="Template" url="/taoDocs2/TaoDocs2/templateExample" />
-		</sections>
+			<section id="taoDocs2_template" name="Hello from .tpl" url="/taoDocs2/Greeter/helloFromTemplate" />
+            <section id="taoDocs2_pilots" name="Hello Pilots" url="/taoDocs2/Greeter/getPilotsList">
+                <trees>
+                    <tree name="Pilots"
+                          className="Pilots"
+                          rootNode="http://www.tao.lu/Ontologies/TAOGroup.rdf#Group"
+                          dataUrl="/taoDocs2/Greeter/getPilotsList"
+                    />
+                    <!-- above tree attributes need clarification -->
+                </trees>
+                <actions>
+                    <action id="vader" name="Vader" url="/taoDocs2/Greeter/vader" group="tree" context="resource">
+                        <icon id="icon-user"/>
+                    </action>
+                    <action id="obiwan" name="Obi-wan" url="/taoDocs2/Greeter/obiwan" group="tree" context="resource">
+                        <icon id="icon-user"/>
+                    </action>
+                </actions>
+            </section>
+        </sections>
 	</structure>
 </structures>

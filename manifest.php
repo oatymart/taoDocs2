@@ -27,7 +27,7 @@ return array(
     'label' => 'taoDocs2',
     'description' => '',
     'license' => 'GPL-2.0',
-    'version' => '0.0.1',
+    'version' => '0.0.2',
     'author' => 'Open Assessment Technologies SA',
     'requires' => array(
         'tao' => '>=20.0.1'
@@ -37,6 +37,10 @@ return array(
         array('grant', 'http://www.tao.lu/Ontologies/generis.rdf#taoDocs2Manager', array('ext'=>'taoDocs2')),
     ),
     'install' => array(
+        'php' => array(
+            \oat\taoDocs2\scripts\install\SetItemThemes::class,
+            \oat\taoDocs2\scripts\install\SetPlatformTheme::class
+        )
     ),
     'uninstall' => array(
     ),

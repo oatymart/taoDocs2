@@ -1,0 +1,14 @@
+{
+    "taodocs2": {
+        "src": "scss/themes",
+        "dest": "css/themes"
+    },
+    "taodocs2-items": {
+        "src": "scss/themes/items",
+        "dest": "css/themes/items"
+    },
+    "taodocs2-platform": {
+        "src": "scss/themes/platform",
+        "dest": "css/themes/platform"
+    }
+}
