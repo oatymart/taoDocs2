@@ -5,7 +5,7 @@ define([
 
     return pluginFactory({
 
-        name: 'hider',
+        name: 'inverter',
 
         init : function init(){
             var areaBroker = this.getAreaBroker();
